@@ -4,6 +4,7 @@
     gap: 1rem;
 }
 
+
 .about__content{
     display: flex;
     flex-direction: column;
@@ -51,6 +52,12 @@
     content: '';
     margin-left: 0.5em;
 }
+
+.about__subtitle--skills {
+    font-size: var(--size-2xl);
+    color: var(--clr-light);
+}
+
 
 /* xs */
 @media (min-width: 475px) {
