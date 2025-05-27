@@ -24,8 +24,6 @@ export default function Navbar() {
     const windowHeight = window.innerHeight;
     const docHeight = document.body.scrollHeight;
 
-    let foundActive = false;
-
     for (const section of sections) {
       const el = document.getElementById(section.id);
       if (!el) continue;
@@ -35,7 +33,6 @@ export default function Navbar() {
 
       if (scrollY + 200 >= top && scrollY + 200 < bottom) {
         setActiveSection(section.id);
-        foundActive = true;
         break;
       }
     }
