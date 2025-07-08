@@ -50,7 +50,7 @@ export default function AboutSection() {
                 className="flex flex-col items-center justify-center border border-sky-400 rounded-lg p-4 hover:scale-105 transition-transform"
               >
                 <img
-                  src={`https://cdn.simpleicons.org/${skill.icon}/ffffff`}
+                  src={`https://cdn.simpleicons.org/${skill.icon}`}
                   alt={skill.name}
                   className="w-10 h-10 mb-2"
                 />
