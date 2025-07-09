@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website!  
 This site showcases my background, projects, and ways to get in touch.
 
-Live Site 👉 [yourdomain.com]([https://yourdomain.com](https://russell-ng.dev/))
+Live Site 👉 ([https://yourdomain.com](https://russell-ng.dev/))
 
 ---
 
