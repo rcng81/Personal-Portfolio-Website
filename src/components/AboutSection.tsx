@@ -1,5 +1,7 @@
 import AboutParticlesBackground from "@/components/AboutParticlesBackground";
 import profilePic from "@/assets/profile2.jpg";
+import cssIcon from "@/assets/css3.png";
+
 
 export default function AboutSection() {
   return (
@@ -39,7 +41,7 @@ export default function AboutSection() {
               { name: "TypeScript", icon: "typescript" },
               { name: "React", icon: "react" },
               { name: "HTML", icon: "html5" },
-              { name: "CSS", icon: "css3" },
+              { name: "CSS", icon: "css3", local: true },
               { name: "Python", icon: "python" },
               { name: "Flask", icon: "flask" },
               { name: "Dash", icon: "plotly" },
@@ -50,18 +52,16 @@ export default function AboutSection() {
                 className="flex flex-col items-center justify-center border border-sky-400 rounded-lg p-4 hover:scale-105 transition-transform"
               >
                 <img
-                  src={`https://cdn.simpleicons.org/${skill.icon}`}
+                  src={skill.local ? cssIcon : `https://cdn.simpleicons.org/${skill.icon}`}
                   alt={skill.name}
                   className="w-10 h-10 mb-2"
                 />
                 <span className="text-sm">{skill.name.toUpperCase()}</span>
               </div>
             ))}
-
           </div>
         </div>
       </div>
     </section>
   );
 }
-
