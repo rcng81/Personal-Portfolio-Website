@@ -1,5 +1,5 @@
 import AboutParticlesBackground from "@/components/AboutParticlesBackground";
-import profilePic from "@/assets/profile.jpg";
+import profilePic from "@/assets/profile2.jpg";
 
 export default function AboutSection() {
   return (
@@ -25,7 +25,7 @@ export default function AboutSection() {
             <img
               src={profilePic}
               alt="Profile"
-              className="w-40 h-40 rounded-full border-4 border-sky-400 shadow-lg"
+              className="w-52 h-52 object-cover rounded-full border-4 border-sky-400 shadow-lg"
             />
             <p className="text-lg text-white max-w-xl leading-relaxed">
               I'm Russell Ng, a recent Computer Science graduate from Pace University with a strong focus on modern web development using React, TypeScript, and Python. I’ve built full-stack applications that span from data dashboards to real-time gig platforms, and during my internship at S&P Global, I engineered a Dash-based interface to analyze over 26,000 product components. My technical strengths lie in building fast, maintainable frontends with React and Tailwind, and crafting clean, scalable APIs with Python and Flask. I’m actively seeking full-time roles where I can build impactful products, work in collaborative environments, and continue growing as a developer.
@@ -64,3 +64,4 @@ export default function AboutSection() {
     </section>
   );
 }
+
