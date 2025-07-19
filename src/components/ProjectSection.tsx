@@ -25,10 +25,10 @@ export default function ProjectsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 w-full items-center">
           {/* Left: Project Details */}
           <div className="text-left md:text-left space-y-6 px-4">
-            <h3 className="text-3xl font-bold">[Sportsdle]</h3>
-            <h4 className="text-2xl font-semibold text-gray-300">[NBA Wordle-style Guessing Game]</h4>
+            <h3 className="text-3xl font-bold">Sportsdle</h3>
+            <h4 className="text-2xl font-semibold text-gray-300">NBA Wordle-style Guessing Game</h4>
             <p className="text-lg text-white max-w-xl">
-              [NBA guessing game built with React, Flask, and Tailwind for real-time player data, smart search, and interactive game modes.]
+              NBA guessing game built with React, Flask, and Tailwind for real-time player data, smart search, and interactive game modes.
             </p>
             <div className="flex flex-col items-start space-y-4 pt-4">
               <a
