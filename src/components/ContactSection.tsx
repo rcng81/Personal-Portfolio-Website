@@ -1,9 +1,5 @@
 import ContactParticlesBackground from "@/components/ContactParticlesBackground";
-<<<<<<< HEAD
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-=======
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
->>>>>>> 89f31a6 (Commit)
 
 export default function ContactSection() {
   return (
