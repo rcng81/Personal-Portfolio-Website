@@ -3,6 +3,7 @@ import gigHopImage from "@/assets/gighop.png";
 import precisionSyncImage from "@/assets/precision_sync.png";
 import boostBuddyImage from "@/assets/boostbuddy.png";
 import sportsdleImage from "@/assets/sportsdle.png";
+import recipfyImage from "@/assets/recipfy.png";
 
 export default function ProjectsSection() {
   return (
@@ -20,15 +21,55 @@ export default function ProjectsSection() {
         </h2>
       </div>
 
+      <div className="z-10 flex-grow flex items-center justify-center w-full py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-full items-center">
+          {/* Left: Full-size Image */}
+          <div className="flex justify-start w-full h-auto relative">
+            <img
+              src={recipfyImage}
+              alt="Gig Hop App"
+              className="rounded-lg shadow-lg w-[100%] max-w-[1200px] h-auto object-contain transition-transform duration-300 hover:scale-95"
+            />
+          </div>
+
+          {/* Right: Project Details */}
+          <div className="text-left md:text-left space-y-6 px-4">
+            <h3 className="text-3xl font-bold">Recipfy</h3>
+            <h4 className="text-2xl font-semibold text-gray-300">Full-stack Recipe-sharing App</h4>
+            <p className="text-lg text-white max-w-xl">
+              Recipe-sharing platform built with React, TypeScript, Supabase, and Tailwind/ShadCN UI for recipe browsing, real-time search + filters, tagging, favorites, and secure CRUD workflows.
+            </p>
+            <div className="flex flex-col items-start space-y-4 pt-4">
+              <a
+                href="https://recipy-space.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white font-semibold border-b-2 border-sky-400 hover:text-sky-400 hover:border-white"
+              >
+                LIVE APP
+              </a>
+              <a
+                href="https://github.com/rcng81/recipe-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white font-semibold border-b-2 border-sky-400 hover:text-sky-400 hover:border-white"
+              >
+                LEARN MORE
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* New Project (Text Left, Image Right) */}
       <div className="z-10 flex-grow flex items-center justify-center w-full py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 w-full items-center">
           {/* Left: Project Details */}
           <div className="text-left md:text-left space-y-6 px-4">
-            <h3 className="text-3xl font-bold">[Sportsdle]</h3>
-            <h4 className="text-2xl font-semibold text-gray-300">[NBA Wordle-style Guessing Game]</h4>
+            <h3 className="text-3xl font-bold">Sportsdle</h3>
+            <h4 className="text-2xl font-semibold text-gray-300">NBA Wordle-style Guessing Game</h4>
             <p className="text-lg text-white max-w-xl">
-              [NBA guessing game built with React, Flask, and Tailwind for real-time player data, smart search, and interactive game modes.]
+              NBA guessing game built with React, Flask, and Tailwind for real-time player data, smart search, and interactive game modes.
             </p>
             <div className="flex flex-col items-start space-y-4 pt-4">
               <a
