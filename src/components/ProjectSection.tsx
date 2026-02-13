@@ -4,6 +4,7 @@ import precisionSyncImage from "@/assets/precision_sync.png";
 import boostBuddyImage from "@/assets/boostbuddy.png";
 import sportsdleImage from "@/assets/sportsdle.png";
 import recipfyImage from "@/assets/recipfy.png";
+import jobTrackerImage from "@/assets/job-tracker.png";
 
 export default function ProjectsSection() {
   return (
@@ -23,11 +24,44 @@ export default function ProjectsSection() {
 
       <div className="z-10 flex-grow flex items-center justify-center w-full py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 w-full items-center">
+          {/* Right: Project Details */}
+          <div className="text-left md:text-left space-y-6 px-4">
+            <h3 className="text-3xl font-bold">LinkedIn Job Tracker</h3>
+            <h4 className="text-2xl font-semibold text-gray-300">Job Application Automation Tracker</h4>
+            <p className="text-lg text-white max-w-xl">
+              Python-based job scraping and tracking system leveraging BeautifulSoup, JSON-LD parsing, and Google Sheets API to automatically extract role metadata (title, company, salary, location, work mode) and log structured entries via PowerShell automation.
+            </p>
+            <div className="flex flex-col items-start space-y-4 pt-4">
+              
+              <a
+                href="https://github.com/rcng81/job-tracker"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white font-semibold border-b-2 border-sky-400 hover:text-sky-400 hover:border-white"
+              >
+                LEARN MORE
+              </a>
+            </div>
+          </div>
+
+          {/* Left: Full-size Image */}
+          <div className="flex justify-start w-full h-auto relative">
+            <img
+              src={jobTrackerImage}
+              alt="Job Tracker App"
+              className="rounded-lg shadow-lg w-[100%] max-w-[1200px] h-auto object-contain transition-transform duration-300 hover:scale-95"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="z-10 flex-grow flex items-center justify-center w-full py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-full items-center">
           {/* Left: Full-size Image */}
           <div className="flex justify-start w-full h-auto relative">
             <img
               src={recipfyImage}
-              alt="Gig Hop App"
+              alt="Recipfy App"
               className="rounded-lg shadow-lg w-[100%] max-w-[1200px] h-auto object-contain transition-transform duration-300 hover:scale-95"
             />
           </div>
@@ -95,7 +129,7 @@ export default function ProjectsSection() {
           <div className="flex justify-end w-full h-auto relative">
             <img
               src={sportsdleImage}
-              alt="[New Project Name]"
+              alt="Sportdles App"
               className="rounded-lg shadow-lg w-[100%] max-w-[1200px] h-auto object-contain transition-transform duration-300 hover:scale-95"
             />
           </div>
