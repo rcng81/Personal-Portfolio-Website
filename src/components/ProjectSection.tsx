@@ -5,6 +5,7 @@ import boostBuddyImage from "@/assets/boostbuddy.png";
 import sportsdleImage from "@/assets/sportsdle.png";
 import recipfyImage from "@/assets/recipfy.png";
 import jobTrackerImage from "@/assets/job-tracker.png";
+import mcsrDashboardImage from "@/assets/mcsr-dashboard.png";
 
 export default function ProjectsSection() {
   return (
@@ -21,6 +22,46 @@ export default function ProjectsSection() {
           <span className="block h-4 w-full bg-sky-400 absolute -bottom-0.5 left-[2rem] -z-10"></span>
         </h2>
       </div>
+
+      <div className="z-10 flex-grow flex items-center justify-center w-full py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-full items-center">
+          {/* Left: Full-size Image */}
+          <div className="flex justify-start w-full h-auto relative">
+            <img
+              src={mcsrDashboardImage}
+              alt="Job Tracker App"
+              className="rounded-lg shadow-lg w-[100%] max-w-[1200px] h-auto object-contain transition-transform duration-300 hover:scale-95"
+            />
+          </div>
+          {/* Right: Project Details */}
+          <div className="text-left md:text-left space-y-6 px-4">
+            <h3 className="text-3xl font-bold">MCSR Dashboard</h3>
+            <h4 className="text-2xl font-semibold text-gray-300">Competitive Minecraft Speed Running Match Analytics Dashboard</h4>
+            <p className="text-lg text-white max-w-xl">
+              Full-stack analytics dashboard built with Python, FastAPI, PostgreSQL, Redis, and Docker to ingest, process, and serve structured match data, paired with a React, TypeScript, Vite, Tailwind CSS, and Recharts frontend for visualizing all-time, 7-day, and 30-day performance trends with fast, cached data delivery.
+            </p>
+            <div className="flex flex-col items-start space-y-4 pt-4">
+              <a
+                href="https://mcsr-stats.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white font-semibold border-b-2 border-sky-400 hover:text-sky-400 hover:border-white"
+              >
+                LIVE APP
+              </a>
+              <a
+                href="https://github.com/rcng81/mcsr-dashboard"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white font-semibold border-b-2 border-sky-400 hover:text-sky-400 hover:border-white"
+              >
+                LEARN MORE
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
 
       <div className="z-10 flex-grow flex items-center justify-center w-full py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 w-full items-center">
